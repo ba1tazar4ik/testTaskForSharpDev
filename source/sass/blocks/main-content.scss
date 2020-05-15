@@ -1,8 +1,8 @@
 .main-content {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  padding: 0 48px;
+  max-width: 75%;
+  padding: 0 48px 33px;
 
   &__header {
     display: flex;
@@ -31,5 +31,68 @@
     background-position: 95% center;
     background-repeat: no-repeat;
     border: 1px solid #a4a4a4;
+  }
+
+  &__button-search {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    background-image: url("../img/main-content/search.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__more-button-wrapper {
+    text-align: center;
+  }
+
+  &__more-button {
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+      color: #0056b3;
+    }
+  }
+}
+
+@media (max-width: 1279px) {
+  .main-content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main-content__title {
+    font-size: 20px;
+  }
+
+  .main-content__search {
+    display: none;
+  }
+
+  .main-content__button-search {
+    display: block;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .main-content__title {
+    display: none;
+  }
+
+  .main-content__button-search {
+    display: none;
   }
 }

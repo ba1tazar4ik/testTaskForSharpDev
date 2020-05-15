@@ -1,8 +1,16 @@
 .products {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   &__title {
     position: relative;
+    width: 100%;
     margin: 0;
     padding: 33px 0;
     font-size: 26px;
@@ -18,5 +26,16 @@
       height: 8px;
       background-color: #aa3132;
     }
+  }
+
+  &__item {
+    width: 122px;
+    margin: 33px 10px 51px;
+  }
+}
+
+@media (max-width: 500px) {
+  .products__title {
+    margin-left: 30px;
   }
 }

@@ -18,16 +18,29 @@
 
 @font-face {
   font-weight: 300;
-  font-family: "Arial";
+  font-family: "ArialMT";
   font-style: normal;
 
   font-display: swap;
-  src: url("../fonts/Arial.woff2") format("woff2");
+  src: url("../fonts/ArialMT.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "ArialMT";
+  font-style: normal;
+
+  font-display: swap;
+  src: url("../fonts/Arial-BoldMT.woff") format("woff");
 }
 
 * {
   box-sizing: border-box;
   transition: 0.3s;
+}
+
+button {
+  cursor: pointer;
 }
 
 body {
@@ -44,11 +57,6 @@ body {
 
   background-color: $bg-black;
 }
-
-//img {
-//  width: 100%;
-//  height: auto;
-//}
 
 a {
   text-decoration: none;
@@ -84,7 +92,26 @@ ul {
 
 .container {
   display: flex;
+  flex-direction: row;
   max-width: 1600px;
+  margin: 0 auto;
   padding: 0 48px;
   background-color: $bg-grey;
+}
+
+.button {
+  cursor: pointer;
+  font-family: "ArialMT", sans-serif;
+}
+
+@media (max-width: 1279px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0;
+  }
 }
