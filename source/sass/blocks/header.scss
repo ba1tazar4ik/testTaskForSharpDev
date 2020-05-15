@@ -1,0 +1,37 @@
+.header {
+  background-color: $bg-black;
+
+  &__title {
+    display: none;
+  }
+
+  &__bg {
+    max-width: 1050px;
+    padding-top: 150px;
+    margin: 0 auto;
+    background-image: url("../img/header/header-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__nav {
+    max-width: 1050px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__title {
+    display: block;
+    position: absolute;
+    top: 94px;
+    width: 100%;
+    padding: 7px 0;
+    font-size: 28px;
+    color: $text-white;
+    text-align: center;
+    background-color: rgba($bg-black, 0.8);
+  }
+}

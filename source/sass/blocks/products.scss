@@ -1,0 +1,22 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  &__title {
+    position: relative;
+    margin: 0;
+    padding: 33px 0;
+    font-size: 26px;
+    line-height: 26px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -25px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 19px;
+      height: 8px;
+      background-color: #aa3132;
+    }
+  }
+}

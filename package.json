@@ -1,8 +1,8 @@
 {
-  "name": "mishka-18",
-  "version": "17.0.0",
+  "name": "parrotWings",
+  "version": "",
   "private": true,
-  "description": "Личный проект «Мишка» от HTML Academy",
+  "description": "Test Task for Sharp developers",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "^9.7.4",

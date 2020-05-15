@@ -74,8 +74,8 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("min_css"));
-  gulp.watch("source/fonts/**/*.{woff,woff2}", gulp.series("fonts"));
-  gulp.watch("build/fonts/*.woff,woff2").on("change", server.reload);
+  gulp.watch("source/fonts/**/*.{woff2}", gulp.series("fonts"));
+  gulp.watch("build/fonts/*.woff2").on("change", server.reload);
   gulp.watch("source/js/**/*.js", gulp.series("js"));
   gulp.watch("build/js/*.js").on("change", server.reload);
   gulp.watch("source/img/**/*.*", gulp.series("images"));
@@ -86,4 +86,3 @@ gulp.task("server", function () {
 
 gulp.task("build", gulp.series("html", "images", "js", "fonts", "min_css", "css"));
 gulp.task("start", gulp.series("build", "server"));
-
