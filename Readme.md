@@ -5,4 +5,4 @@ To run project do:
 
 or :
 1. npm install
-2. run start and localhost start with test task
+2. npm start and localhost start with test task
