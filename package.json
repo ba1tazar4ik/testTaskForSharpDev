@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "csscomb": "^4.3.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "prettier": "^1.19.1"
   }
 }
